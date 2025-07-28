@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/heatmapjs@2.0.5/heatmap.min.js"></script> -->
+
+    <title>Interactive Infographics</title>
+</head>
+<body>
+    <header>
+        <h1> Social Media & Mental Health Insights</h1>
+        <p>An interactive infographic exploring trends and correlations</p>
+    </header>
+
+    <main>
+        <section id="chart-grid">
+            <!-- CHART 1: Average Screen Time -->
+            <div class="chart-card" id="screen-time">
+                <h2>Average Screen Time per Age Group</h2>
+                <canvas id="chart-screen-time"></canvas>
+                <p>Younger age groups (10–19, 20–29) have the highest average screen time, which drops sharply in the middle age groups (30–59) and then rises again slightly in older adults (60–69).</p>
+            </div>
+
+            <!-- CHART 2: % Feeling Depressed or Restless -->
+            <div class="chart-card" id="depression">
+                <h2>Percentage Feeling Depressed / Restless</h2>
+                <canvas id="chart-depression"></canvas>
+                <p>Feelings of depression and restlessness are highest among 10–29 age groups and decline in older age groups.</p>
+            </div>
+
+            <!-- CHART 3: Gender Split: Validation Seeking -->
+            <!-- <div class="chart-card" id="gender-split">
+                <h2>Validation Seeking by Gender</h2>
+                <canvas id="chart-gender-split"></canvas>
+            </div> -->
+            <div class="chart-card single-center" id="platforms">
+                <h2>Top Social Media Platforms Used</h2>
+                <canvas id="chart-platforms"></canvas>
+                <p>YouTube, Facebook, and Instagram dominate platform usage, while TikTok and Reddit lag behind. Discord usage is also surprisingly high.</p>
+            </div>
+
+            <!-- CHART 4: Correlation: Screen Time vs Depression -->
+            <!-- <div class="chart-card" id="correlation">
+                <h2>Correlation: Screen Time vs Depression</h2>
+                <canvas id="chart-correlation" style="max-height: 250rem; width: 100%;"></canvas>
+                
+            </div> -->
+
+            <!-- CHART 5: Top Social Media Platforms -->
+            <!-- <div class="chart-card single-center" id="platforms">
+                <h2>Top Social Media Platforms Used</h2>
+                <canvas id="chart-platforms"></canvas>
+            </div> -->
+            <div class="chart-card" id="gender-split">
+                <h2>Validation Seeking by Gender</h2>
+                <canvas id="chart-gender-split"></canvas>
+                <p>Males and females are nearly equal in validation-seeking behavior, with a slight difference (depending on exact values).</p>
+            </div>
+            <div class="chart-card" id="correlation">
+                <h2>Correlation: Screen Time vs Depression</h2>
+                <canvas id="chart-correlation" ></canvas>
+                <p>Higher screen time correlates with higher depression scores, especially as usage approaches 5–6 hours daily.</p>
+                
+            </div>
+            <div class="Infographics">
+                <h3><i><ul>
+                    <li>Teens & Seniors spend most time online: what’s driving it?</li>
+                    <li>Youth mental health challenges spike with screen use</li>
+                    <li>Validation seeking is universal: gender differences are minimal.</li>
+                    <li>YouTube reigns supreme, but Discord surprises as 4th favorite</li>
+                    <li>The tipping point: depression rises beyond 4+ hours screen time</li>
+                </ul></i></h3>
+                <!-- <canvas id="chart-gender-split"></canvas> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data Source: Survey Data from Kaggle | © 2025 Interactive Infographics</p>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@1.2.0/dist/chartjs-chart-matrix.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fc;
+    color: #333;
+} */
+body {
+    background: linear-gradient(145deg, #f0f4f8, #d9e2ec);
+    background-image: url('https://www.transparenttextures.com/patterns/white-carbon.png');
+    background-repeat: repeat;
+    background-size: 300px;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background: darkslategrey;
+    color: white;
+    padding: 0.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#chart-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    /* width: 90%; */
+    /* justify-items: center;  */
+}
+
+.chart-card {
+    /* background: rgba(255, 255, 255, 0.7); */
+    /* padding: 1rem; */
+    /* border-radius: 16px; */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    width: 40%;
+    transition: transform 0.2s ease-in-out;
+    margin: 10px 0;
+
+    /* max-width: 500px; */
+}
+p{
+    padding: 1rem;
+    font-style: italic;
+}
+.chart-card h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+#chart-gender-split{
+    width: 10%;
+    height:fit-content;
+}
+.single-center {
+    grid-column: span 2;
+    justify-self: center;
+}
+.chart-card:hover {
+    transform: scale(1.02); 
+}
+#chart-correlation {
+    width: 98%; 
+    /* left: -50px; */
+    height: 20vh;
+}
+.Infographics{
+    padding-right: 8rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: darkslategray;
+    color: white;
+}
